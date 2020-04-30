@@ -1,0 +1,12 @@
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+.progress.top {
+  top: 0;
+}
+
+.progress.bottom {
+  bottom: 0;
+}

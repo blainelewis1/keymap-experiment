@@ -4,35 +4,10 @@
 
 _Principal Investigator/Faculty Supervisor:_ Dr. Daniel Vogel, Assistant Professor, School of Computer Science, University of Waterloo, Canada, 519-888-4567 ext. 33561, dvogel@uwaterloo.ca
 
-_Co-Investigators_:
-
-- Dr. Aakar Gupta, Postdoctoral Fellow, aakar.gupta@uwaterloo.ca
-- Dr. Fabrice Matulic, Postdoctoral Fellow, fabrice.matulic@uwaterloo.ca
-- Dr. Quentin Roy, Postdoctoral Fellow, quentin.roy@uwaterloo.ca
-- Dr. Kieko Katsuragawa, Assistant Research Professor, kkatsura@uwaterloo.ca
-
 Graduate Student Investigators:
 
-- Lisa Elkin, laelkin@uwaterloo.ca
-- Jeremy Hartmann, jeremy.hartmann@uwaterloo.ca
-- Hemant Surale, hsurale@uwaterloo.ca
-- Jingjie Zheng, jingjie.zheng@uwaterloo.ca
 - Blaine Lewis, b2lewis@uwaterloo.ca
-- Joshua Jung, j35jung@uwaterloo.ca
-- Edmund Li, qfliu@uwaterloo.ca
-- Nikhita Joshi, nvjoshi@uwaterloo.ca
-- Yen-Ting (Allen) Yeh, y6yeh@uwaterloo.ca
 - Greg d’Eon, gldeon@uwaterloo.ca
-- Rahul Iyer, rahul.iyer@uwaterloo.ca
-- Nalin Chhibber, nalin.chhibber@uwaterloo.ca
-- Matthew Lakier, mlakier@uwaterloo.ca
-
-Undergraduate Investigators
-
-- Drini Cami, dcami@uwaterloo.ca
-- HeYue Chen, hy4chen@edu.uwaterloo.ca
-- Jimmy Shan, shan@edu.uwaterloo.ca
-- Ningshan Ouyang, nouyang@edu.uwaterloo.ca
 
 To help you make an informed decision regarding your participation, this letter will explain what the study is about, the possible risks and benefits, and your rights as a research participant.
 

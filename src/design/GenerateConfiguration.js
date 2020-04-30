@@ -265,7 +265,7 @@ export function generateRandomParticipant() {
 
   let stimulusType = "ImageStimulus";
   let stimulusImageExtension = "png";
-  let stimulusImagePath = "/images";
+  let stimulusImagePath = "images";
 
   // itemsFromMenu(menus).forEach(({ command: stimulus }) => {
   //   let img = new Image();

@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "main": "src/electron.js",
+  "homepage": "http://blainelewis.ca/keymap-experiment",
   "dependencies": {
     "@material-ui/core": "^1.4.2",
     "aws-sdk": "^2.291.0",
     "classnames": "^2.2.6",
     "e": "0.0.4",
-    "lodash": "^4.17.10",
+    "gh-pages": "^2.2.0",
+    "lodash": "^4.17.15",
     "raw-loader": "^0.5.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
@@ -43,7 +45,7 @@
     "build-storybook": "build-storybook -s public -o docs",
     "start-electron": "electron .",
     "predeploy": "npm run build",
-    "deploy": "aws s3 sync build/ s3://$npm_package_config_bucket"
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.8",

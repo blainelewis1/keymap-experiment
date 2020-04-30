@@ -21,8 +21,8 @@ let linearmenus = [
       { command: "frog" },
       { command: "penguin" },
       { command: "pigeon" },
-      { command: "zebra" }
-    ]
+      { command: "zebra" },
+    ],
   },
   {
     title: "fruits",
@@ -38,8 +38,8 @@ let linearmenus = [
       { command: "pineapple" },
       { command: "prune" },
       { command: "strawberry" },
-      { command: "watermelon" }
-    ]
+      { command: "watermelon" },
+    ],
   },
   {
     title: "vegetables",
@@ -55,8 +55,8 @@ let linearmenus = [
       { command: "onion" },
       { command: "pepper" },
       { command: "potato" },
-      { command: "pumpkin" }
-    ]
+      { command: "pumpkin" },
+    ],
   },
   {
     title: "office",
@@ -72,8 +72,8 @@ let linearmenus = [
       { command: "stamp" },
       { command: "stapler" },
       { command: "telephone" },
-      { command: "trash" }
-    ]
+      { command: "trash" },
+    ],
   },
   {
     title: "clothing",
@@ -89,8 +89,8 @@ let linearmenus = [
       { command: "socks" },
       { command: "sweater" },
       { command: "t-shirt" },
-      { command: "trousers" }
-    ]
+      { command: "trousers" },
+    ],
   },
   {
     title: "recreation",
@@ -106,9 +106,9 @@ let linearmenus = [
       { command: "karate" },
       { command: "pool" },
       { command: "rubikscube" },
-      { command: "tennis" }
-    ]
-  }
+      { command: "tennis" },
+    ],
+  },
 ];
 
 let letters = "qwertyuiopasdfghjklzxcvbnm";
@@ -124,8 +124,8 @@ function generateRandomShortcut() {
   return [shortcut];
 }
 
-linearmenus.forEach(menu => {
-  menu.items.forEach(item => {
+linearmenus.forEach((menu) => {
+  menu.items.forEach((item) => {
     item.shortcut = generateRandomShortcut();
   });
 });
@@ -137,7 +137,7 @@ export default {
   menu: "ExposeHK",
   // delay: 500,
   stimulusType: "ImageStimulus",
-  stimulusImagePath: "/images",
+  stimulusImagePath: "images",
   stimulusImageExtension: "png",
   participant: "hello",
   commandHierarchy: menuToCommandHierarchy(linearmenus),
@@ -150,19 +150,19 @@ export default {
           current: { key: "trials", index: 0 },
           trials: [
             {
-              stimulus: "bat"
+              stimulus: "bat",
             },
             {
-              stimulus: "camel"
+              stimulus: "camel",
             },
             {
-              stimulus: "apple"
+              stimulus: "apple",
             },
             {
-              stimulus: "dog"
-            }
-          ]
-        }
+              stimulus: "dog",
+            },
+          ],
+        },
         // {
         //   current: { key: "trials", index: 0 },
         //   trials: [
@@ -180,7 +180,7 @@ export default {
         //     }
         //   ]
         // }
-      ]
+      ],
     },
     {
       task: "StimulusResponseTask",
@@ -192,20 +192,20 @@ export default {
           current: { key: "trials", index: 0 },
           trials: [
             {
-              stimulus: "bat"
+              stimulus: "bat",
             },
             {
-              stimulus: "camel"
+              stimulus: "camel",
             },
             {
-              stimulus: "apple"
+              stimulus: "apple",
             },
             {
-              stimulus: "dog"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+              stimulus: "dog",
+            },
+          ],
+        },
+      ],
+    },
+  ],
 };

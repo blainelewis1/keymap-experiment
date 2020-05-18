@@ -1,5 +1,3 @@
-import { Object } from "es6-shim";
-
 /**
  * Shuffles array in place. ES6 version
  * @param {Array} a An array containing the items.
@@ -45,7 +43,7 @@ export function randInt(min, max) {
  * Generates a random GUID.
  */
 export function uuidv4() {
-  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(c) {
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
     var r = (Math.random() * 16) | 0,
       v = c === "x" ? r : (r & 0x3) | 0x8;
     return v.toString(16);
@@ -56,9 +54,7 @@ export function uuidv4() {
  * Generates a random string.
  */
 export function randomString() {
-  return Math.random()
-    .toString(36)
-    .substring(2);
+  return Math.random().toString(36).substring(2);
 }
 
 // Return array of string values, or NULL if CSV string not well formed.
@@ -71,7 +67,7 @@ export function CSVtoArray(text) {
   var a = []; // Initialize array to receive values.
   text.replace(
     re_value, // "Walk" the string using replace with callback.
-    function(m0, m1, m2, m3) {
+    function (m0, m1, m2, m3) {
       // Remove backslash from \' in single quoted values.
       if (m1 !== undefined) a.push(m1.replace(/\\'/g, "'"));
       // Remove backslash from \" in double quoted values.
@@ -90,7 +86,7 @@ export function getOS() {
     Win: "Windows",
     Mac: "MacOS",
     X11: "UNIX",
-    Linux: "Linux"
+    Linux: "Linux",
   };
 
   for (const os of Object.keys(oss)) {
@@ -120,6 +116,6 @@ export function getBrowserInfo() {
     sizeAvailW: window.screen.availWidth,
     sizeAvailH: window.screen.availHeight,
     scrColorDepth: window.screen.colorDepth,
-    scrPixelDepth: window.screen.pixelDepth
+    scrPixelDepth: window.screen.pixelDepth,
   };
 }

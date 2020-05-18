@@ -82,13 +82,17 @@ export function generateRandomParticipant() {
   let worker_id = params.get("WORKER_ID") || "";
   let assignment_id = params.get("ASSIGNMENT_ID") || "";
   let hit_id = params.get("HIT_ID") || "blaine";
+  let menu = params.get("CONDITION") || randomChoice(["KeyMap", "ExposeHK"]);
+
+  if (menu !== "KeyMap" || menu !== "ExposeHK") {
+    menu = "KeyMap";
+  }
 
   let s3FileName = `${[participant, session].filter((a) => a).join("_")}.json`;
 
   let seed = participant;
   seedrandom(participant, { global: true });
 
-  let menu = randomChoice(["KeyMap", "ExposeHK"]);
   let menus = cloneDeep(newMenus);
 
   let backmap = {

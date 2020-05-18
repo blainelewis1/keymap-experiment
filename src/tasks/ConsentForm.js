@@ -19,16 +19,16 @@ export default class ConsentForm extends React.Component {
     super(props);
     this.state = {};
   }
-  handleChange = name => event => {
+  handleChange = (name) => (event) => {
     this.setState({ [name]: event.target.checked });
   };
 
   requiredFieldNotFilled() {
-    let requiredNotFilled = this.props.questions.map(
-      question => (question.required ? !this.state[question.label] : true)
+    let requiredNotFilled = this.props.questions.map((question) =>
+      question.required ? !this.state[question.label] : true
     );
 
-    return !requiredNotFilled.some(val => !val);
+    return !requiredNotFilled.some((val) => !val);
   }
 
   handleSubmit = () => {
@@ -49,16 +49,14 @@ export default class ConsentForm extends React.Component {
           {items.map(({ command: stimulus }) => (
             <img
               alt={stimulus}
-              src={`${this.props.stimulusImagePath}/${stimulus}.${
-                this.props.stimulusImageExtension
-              }`}
+              src={`${this.props.stimulusImagePath}/${stimulus}.${this.props.stimulusImageExtension}`}
             />
           ))}
         </div>
         <Typography dangerouslySetInnerHTML={{ __html: marked(letter) }} />
         <FormControl required error={error}>
           <FormGroup>
-            {questions.map(question => {
+            {questions.map((question) => {
               return (
                 <FormGroup key={question.label}>
                   <FormControlLabel

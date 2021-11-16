@@ -6,7 +6,7 @@
   "homepage": ".",
   "dependencies": {
     "@material-ui/core": "^1.4.2",
-    "aws-sdk": "^2.291.0",
+    "aws-sdk": "^2.814.0",
     "classnames": "^2.2.6",
     "e": "0.0.4",
     "gh-pages": "^2.2.0",
